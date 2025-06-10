@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff;
+  background: #0a0a0a;
+  overflow-x: hidden;
+  position: relative;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px 20px;
+  background: rgba(0, 255, 255, 0.05);
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #00ffe0;
+  text-shadow: 0 0 10px #00ffe0;
+  animation: glow 2s infinite alternate;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #00ffe0; }
+  to { text-shadow: 0 0 20px #00ffe0, 0 0 40px #00ffe0; }
+}
+
+.bandeiras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.bandeira {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ffe0;
+  border-radius: 15px;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.bandeira:hover {
+  transform: scale(1.1) rotateY(10deg);
+  box-shadow: 0 0 20px #00ffe0;
+}
+
+.bandeira img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #999;
+  background-color: #111;
+}
